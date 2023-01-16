@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>JS_Calculator</title>
+</head>
+<body>
+    <div class="row flex-margin" id="calc">
+      <div id="kakulator">
+        <div class="row w-100">
+            <input type="text" name="" id="number" class="bg-dark text-warning w-100" >
+            <label>Calculator</label>
+          </div>
+                <div id="first" class="row w-100">
+                    <button class="btn btn-warning  col-3 my-2 " onclick="display('**')">**</button>
+                    <button  class="btn btn-warning  col-3 my-2" onclick="display1('  ')">MC</button>
+                    <button class="btn btn-warning col-3 my-2" onclick="display('%')">%</button>
+                    <button class="btn btn-warning col-3 my-2" onclick="display('/')">/</button>
+                </div>
+                <div id="second" class="row w-100">
+                    <button class="btn btn-outline-light text-bg-light col-3 my-2 " onclick="display('7')">7</button>
+                    <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="display('8')">8</button>
+                    <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="display('9')">9</button>
+                    <button class="btn btn-secondary col-3 my-2" onclick="display('*')">*</button>
+                </div>
+                <div id="third" class="row w-100">
+                    <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="display('4')">4</button>
+                    <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="display('5')">5</button>
+                    <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="display('6')">6</button>
+                    <button class="btn btn-secondary col-3 my-2" onclick="display('-')">-</button>
+                </div>
+                <div id="fourth" class="row w-100">
+                    <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="display('1')">1</button>
+                    <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="display('2')">2</button>
+                    <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="display('3')">3</button>
+                    <button class="btn btn-secondary col-3 my-2" onclick="display('+')">+</button>
+                </div>
+            
+            <div class="row w-100" id="fifth">
+                <button class="btn btn-outline-light text-bg-light col-6 my-2 col-sm-6" onclick="display('0')">0</button>
+                <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="display('.')">.</button>
+                <button class="btn btn-secondary col-3 my-2" onclick="compute()">=</button>
+            </div>
+            
+      </div>
+     
+       
+    </div>
+
+    <!-- =============================================JavaScript======================================== -->
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script>
+        function display(caption){
+            document.getElementById('number').value+=caption;
+        }
+
+        function display1(caption){
+            document.getElementById('number').value=caption;
+        }
+
+        function compute(){
+            document.getElementById('number').value=eval(document.getElementById('number').value)
+        }
+    </script>
+</body>
+</html>

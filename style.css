@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body .flex-margin{
+    margin: auto;
+}
+body{
+    width: 100;
+    height: fit-content;
+    display: flex;
+}
+label{
+    font-size: 24px;
+    color: white;
+    text-shadow: 4px 2px 1px hsl(39, 100%, 50%);
+    text-align: center;
+}
+#calc{
+    display: flex;
+    /* margin:50px 50px 50px 50px; */
+    overflow: hidden;
+    /* padding: 20px; */
+    max-width: 400px;
+    float: left;
+    /* box-shadow: 3px 3px 3px 3px gray ; */
+    box-shadow: 6px 6px 10px rgba(0 0 0 / .15),
+             -5px -5px 6px #f3f3f3;
+    height: 400px;
+}
+#calc > #kakulator{
+    margin: auto;
+}
+
+button{
+    box-shadow: 4px 4px 4px 4px gray ;
+    /* drop-shadow:4px 4px 4px 4px gray ; */
+    /* box-shadow: 6px 6px 10px rgba(0 0 0 / .15),
+             -5px -5px 6px #f3f3f3;
+    gap: 5rem; */
+    /* row-gap: 5rem; */
+}
+#number{
+    height: 80px;
+    box-shadow: 3px 3px 3px 3px gray ;
+    width: 100%;
+}
+#first{
+    width: 100%;
+    color: orange;
+}
+#second{
+    width: 100%;
+}
