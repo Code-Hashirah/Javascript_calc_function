@@ -17,7 +17,7 @@
           </div>
                 <div id="first" class="row w-100">
                     <button class="btn btn-warning  col-3 my-2 " onclick="display('**')">**</button>
-                    <button  class="btn btn-warning  col-3 my-2" onclick="display1('  ')">MC</button>
+                    <button  class="btn btn-warning  col-3 my-2" onclick="display1('  ')">C</button>
                     <button class="btn btn-warning col-3 my-2" onclick="display('%')">%</button>
                     <button class="btn btn-warning col-3 my-2" onclick="display('/')">/</button>
                 </div>
@@ -59,7 +59,7 @@
         }
 
         function display1(caption){
-            document.getElementById('number').value=caption;
+            document.getElementById('number').value=document.getElementById('number').value.slice(0,-1);
         }
 
         function compute(){
